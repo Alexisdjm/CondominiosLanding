@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { images } from "@/assets/images";
-import { GradientBG } from "@/components/UI";
-import { CustomCTA } from "../UI/CustomCTA";
+import { CustomCTA, GradientBG, GridBG } from "@/components/UI";
 
 export function HeroBanner() {
   const { dashboard } = images;
 
   return (
-    <section className="relative overflow-hidden bg-white pt-12 pb-0 lg:pt-16">
+    <section className="relative -mt-20 overflow-hidden bg-white pt-32 pb-0 lg:pt-36">
+      <GridBG gap={85} />
+
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center lg:px-10">
         <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl lg:text-6xl xl:text-7xl">
           <span className="block">

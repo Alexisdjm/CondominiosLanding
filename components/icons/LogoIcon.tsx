@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type LogoIconProps = {
   width?: number;
   height?: number;
@@ -10,13 +12,14 @@ export function LogoIcon({
   className,
 }: LogoIconProps) {
   return (
-    <img
+    <Image
       src="/logo.svg"
       width={width}
       height={height}
       alt=""
       className={className}
-      aria-hidden="true"
+      aria-hidden
+      unoptimized
     />
   );
 }
