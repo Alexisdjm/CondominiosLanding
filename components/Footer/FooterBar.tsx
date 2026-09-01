@@ -5,7 +5,7 @@ export function FooterBar() {
   const year = new Date().getFullYear();
 
   return (
-    <div className="px-6 py-8 lg:px-10 lg:py-10">
+    <div className="px-6 py-6 lg:px-10 lg:py-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm font-medium text-black/70">
           © {year} CondominiosYa. Todos los derechos reservados.

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CloseIcon } from "@/components/icons/CloseIcon";
 import { NAV_LINKS } from "@/components/Header/nav-links";
 import { isLinkActive } from "@/components/Header/utils";
-import { CustomCTA } from "@/components/UI/CustomCTA";
+import { CustomCTA } from "@/components/UI";
 
 type MobileSidebarProps = {
   pathname: string;

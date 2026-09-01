@@ -1,5 +1,5 @@
 import { UserIcon } from "@/components/icons/UserIcon";
-import { CustomCTA } from "@/components/UI/CustomCTA";
+import { CustomCTA } from "@/components/UI";
 
 export function HeaderActions() {
   return (
@@ -12,7 +12,7 @@ export function HeaderActions() {
         <UserIcon />
       </button>
 
-      <CustomCTA href="/contacto" label="Contáctanos" />
+      <CustomCTA href="/contacto" label="Contáctanos" className="rounded-full border-none" color="black" />
     </div>
   );
 }

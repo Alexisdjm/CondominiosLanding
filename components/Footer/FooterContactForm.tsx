@@ -1,12 +1,11 @@
 "use client";
 
-import { SendCTA } from "@/components/UI/SendCTA";
+import { SendCTA } from "@/components/UI";
 
 export function FooterContactForm() {
   return (
-    <section className="relative overflow-hidden px-6 pt-16 pb-20 lg:px-10 lg:pt-24 lg:pb-28">
-
-      <div className="relative flex flex-col items-center justify-center mx-auto max-w-5xl">
+    <section className="px-6 pt-16 pb-20 lg:px-10 lg:pt-24 lg:pb-28">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center">
         <h2 className="mb-12 text-center font-display text-3xl font-bold tracking-tight text-black lg:mb-8 lg:text-5xl">
           Usa{" "}
           <span className="bg-gradient-to-r from-black to-turquoise bg-clip-text text-transparent">
