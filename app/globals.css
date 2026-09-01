@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --turquoise: #50dacd;
+  --gray-light: #f2f2f2;
+  --font-sf-pro:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-turquoise: var(--turquoise);
+  --color-gray-light: var(--gray-light);
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font-body: var(--font-montserrat), ui-sans-serif, sans-serif;
+  --font-display: var(--font-sf-pro);
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Títulos grandes (≥ 40px) → SF Pro */
+.font-display,
+.text-5xl,
+.text-6xl,
+.text-7xl,
+.text-8xl,
+.text-9xl {
+  font-family: var(--font-display);
+}
