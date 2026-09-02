@@ -44,7 +44,7 @@ export function CustomCTA({
     <Link
       href={href}
       onClick={onClick}
-      className={`group relative inline-flex min-h-[2.9em] cursor-pointer items-center ${styles.bg} justify-center overflow-hidden px-6 text-sm font-semibold transition-colors duration-300 ${styles.link} ${className}`}
+      className={`group relative inline-flex min-h-[2.9em] cursor-pointer items-center ${styles.bg} justify-center overflow-hidden px-6 text-sm transition-colors duration-300 ${styles.link} ${className}`}
     >
       <span
         className={`absolute left-full top-full h-[100px] w-[250px] rounded-full transition-all duration-600 group-hover:-left-7.5 group-hover:-top-7.5 ${styles.fill}`}

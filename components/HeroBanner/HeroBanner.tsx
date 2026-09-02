@@ -20,13 +20,13 @@ export function HeroBanner() {
           <span className="block">clara y efectiva.</span>
         </h1>
 
-        <p className="mx-auto mt-2 max-w-2xl text-sm font-medium leading-relaxed text-black/60 sm:text-base lg:mt-2">
+        <p className="hidden mx-auto mt-2 max-w-2xl text-sm font-medium leading-relaxed text-black/60 sm:block sm:text-base lg:mt-2">
           Enfocada en automatización y tranquilidad Simplifica la
           administración, automatiza cobros y mantén a tu comunidad conectada
         </p>
 
         <div className="mt-2 flex justify-center lg:mt-4">
-          <CustomCTA href="/" label="Comienza ahora" className="hover:text-black hover:border-white rounded-xl" color="black" />
+          <CustomCTA href="/" label="Comienza ahora" className="hover:text-black hover:border-white rounded-xl mt-6 sm:mt-0" color="black" />
         </div>
       </div>
 

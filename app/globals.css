@@ -127,6 +127,24 @@ body {
   animation-fill-mode: forwards;
 }
 
+@keyframes introduction-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.introduction-progress-segment {
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation-name: introduction-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 .grid-bg {
   --grid-gap-mobile: 85px;
   --grid-gap-desktop: 85px;
