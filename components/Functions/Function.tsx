@@ -1,7 +1,7 @@
 import { FunctionCarousel } from "@/components/Functions/FunctionCarousel";
 import { FUNCTION_ITEMS } from "@/components/Functions/function-items";
 
-export function Function() {
+export function Function({ showEdgeFade = true }: { showEdgeFade?: boolean }) {
   return (
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
@@ -22,8 +22,8 @@ export function Function() {
         </p>
       </div>
 
-      <div className="mt-12 lg:mt-14">
-        <FunctionCarousel items={FUNCTION_ITEMS} />
+      <div className="mt-4 lg:mt-6">
+        <FunctionCarousel items={FUNCTION_ITEMS} showEdgeFade={showEdgeFade} />
       </div>
     </section>
   );
