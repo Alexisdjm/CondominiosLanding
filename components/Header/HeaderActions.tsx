@@ -3,7 +3,7 @@ import { CustomCTA } from "@/components/UI";
 
 export function HeaderActions() {
   return (
-    <div className="hidden items-center gap-4 shrink-0 md:flex">
+    <div className="hidden items-center gap-4 shrink-0 nav:flex">
       <button
         type="button"
         aria-label="Cuenta de usuario"
@@ -12,7 +12,7 @@ export function HeaderActions() {
         <UserIcon />
       </button>
 
-      <CustomCTA href="/contacto" label="Contáctanos" className="rounded-full border-none" color="black" />
+      <CustomCTA href="/contacto" label="Contáctanos" className="rounded-full border-none hover:text-white" color="turquoise" />
     </div>
   );
 }

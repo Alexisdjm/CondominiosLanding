@@ -4,25 +4,30 @@ type CustomCTAProps = {
   href: string;
   label: string;
   className?: string;
-  color?: "turquoise" | "black" | "white";
+  color?: "turquoise" | "black" | "white" | "transparent";
   onClick?: () => void;
 };
 
 const colorStyles = {
   turquoise: {
-    link: "border-transparent text-turquoise",
-    fill: "bg-turquoise",
-    bg: "bg-transparent",
-  },
-  black: {
-    link: "border-white text-white",
+    link: "border-transparent text-black",
     fill: "bg-black",
     bg: "bg-turquoise",
   },
-  white: {
-    link: "border-black text-white",
+  black: {
+    link: "border-white text-white",
     fill: "bg-white",
     bg: "bg-black",
+  },
+  white: {
+    link: "border-none text-black",
+    fill: "bg-turquoise",
+    bg: "bg-white",
+  },
+  transparent: {
+    link: "border-white text-white",
+    fill: "bg-white",
+    bg: "bg-transparent",
   },
 } as const;
 

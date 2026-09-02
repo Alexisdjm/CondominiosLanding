@@ -9,9 +9,9 @@ export function Function({ showEdgeFade = true }: { showEdgeFade?: boolean }) {
           Funciones
         </span>
 
-        <h2 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl lg:text-6xl">
+        <h2 className="mt-6 font-display text-5xl font-bold leading-tight tracking-tight text-black sm:text-6xl lg:text-7xl">
           <span className="block">Gestión integral</span>
-          <span className="block bg-gradient-to-r from-turquoise to-black bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-black from-[20%] via-turquoise via-[70%] to-[#12c2b3] bg-clip-text text-transparent">
             simplificada
           </span>
         </h2>

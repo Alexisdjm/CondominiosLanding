@@ -49,7 +49,7 @@ export function DesktopNav({ pathname }: DesktopNavProps) {
 
   return (
     <nav
-      className="relative hidden items-center gap-8 md:flex"
+      className="relative hidden items-center gap-8 nav:flex"
       onMouseLeave={() => setHoveredIndex(null)}
     >
       {NAV_LINKS.map((link, index) => (

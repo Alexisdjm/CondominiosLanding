@@ -10,7 +10,7 @@ export function HeroBanner() {
       <GridBG gap={85} />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center lg:px-10">
-        <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl lg:text-6xl xl:text-7xl">
+        <h1 className="font-display text-5xl font-bold leading-tight tracking-tight text-black sm:text-6xl lg:text-7xl">
           <span className="block">
             Gestión de{" "}
             <span className="bg-gradient-to-r from-black to-turquoise bg-clip-text text-transparent">
@@ -26,7 +26,7 @@ export function HeroBanner() {
         </p>
 
         <div className="mt-2 flex justify-center lg:mt-4">
-          <CustomCTA href="/" label="Comienza ahora" className="hover:text-black hover:border-white rounded-xl" color="white" />
+          <CustomCTA href="/" label="Comienza ahora" className="hover:text-black hover:border-white rounded-xl" color="black" />
         </div>
       </div>
 

@@ -22,7 +22,7 @@ export function MobileSidebar({
       <button
         type="button"
         aria-label="Cerrar menú"
-        className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-[60] bg-black/50 transition-opacity duration-300 nav:hidden ${
           isOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -34,7 +34,7 @@ export function MobileSidebar({
       <aside
         id="mobile-sidebar"
         aria-hidden={!isOpen}
-        className={`fixed left-0 top-0 z-50 flex h-full w-[min(280px,85vw)] flex-col bg-white shadow-xl transition-transform duration-300 ease-out md:hidden ${
+        className={`fixed left-0 top-0 z-[70] flex h-full w-[min(280px,85vw)] flex-col bg-white shadow-xl transition-transform duration-300 ease-out nav:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

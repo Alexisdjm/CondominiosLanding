@@ -4,9 +4,9 @@ import { SendCTA } from "@/components/UI";
 
 export function FooterContactForm() {
   return (
-    <section className="px-6 pt-16 pb-20 lg:px-10 lg:pt-24 lg:pb-28">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center">
-        <h2 className="mb-12 text-center font-display text-3xl font-bold tracking-tight text-black lg:mb-8 lg:text-5xl">
+    <section className="px-[30px] pt-16 pb-20 sm:px-[15px] lg:px-10 lg:pt-24 lg:pb-28">
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-center">
+        <h2 className="text-center font-display text-4xl font-bold tracking-tight text-black lg:mb-8 lg:text-5xl">
           Usa{" "}
           <span className="bg-gradient-to-r from-black to-turquoise bg-clip-text text-transparent">
             CondominiosYa!
@@ -14,7 +14,7 @@ export function FooterContactForm() {
         </h2>
 
         <form
-          className="rounded-3xl w-[45vw] border border-white/70 bg-white/45 p-6 backdrop-blur-sm lg:p-10"
+          className="w-full rounded-3xl border border-white/70 bg-white/45 p-6 backdrop-blur-sm min-[600px]:w-[60vw] min-[600px]:max-w-[600px] lg:w-[45vw] lg:max-w-2xl lg:p-10"
           onSubmit={(event) => event.preventDefault()}
         >
           <div className="grid gap-4 lg:gap-5">

@@ -20,6 +20,7 @@
   --font-body: var(--font-montserrat), ui-sans-serif, sans-serif;
   --font-display: var(--font-sf-pro);
   --font-sans: var(--font-body);
+  --breakpoint-nav: 1024px;
 }
 
 body {
@@ -107,6 +108,23 @@ body {
 
 .function-carousel:hover .function-carousel__track {
   animation-play-state: paused;
+}
+
+@keyframes target-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.target-progress-bar {
+  transform: scaleX(0);
+  animation-name: target-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .grid-bg {
