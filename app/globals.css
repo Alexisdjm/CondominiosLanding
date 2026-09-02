@@ -91,6 +91,24 @@ body {
   transform: scale(0.95);
 }
 
+@keyframes function-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.function-carousel__track {
+  animation: function-carousel-scroll 45s linear infinite;
+}
+
+.function-carousel:hover .function-carousel__track {
+  animation-play-state: paused;
+}
+
 .grid-bg {
   --grid-gap-mobile: 85px;
   --grid-gap-desktop: 85px;
