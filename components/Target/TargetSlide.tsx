@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { TargetItem } from "@/components/Target/target-items";
-import { CustomCTA } from "@/components/UI";
+import { CustomCTA, SectionBadge } from "@/components/UI";
 
 type TargetSlideProps = {
   item: TargetItem;
@@ -23,9 +23,7 @@ export function TargetSlide({ item, priority = false }: TargetSlideProps) {
 
       <div className="relative z-10 flex h-full min-h-[640px] flex-col justify-start px-6 pt-20 pb-24 md:justify-start md:px-10 md:py-24 lg:min-h-[720px] lg:px-16 xl:px-24">
         <div className="max-w-2xl">
-          <span className="inline-flex rounded-full bg-[#9bf8ee] px-4 py-1.5 text-sm font-regular text-black">
-            {item.badge}
-          </span>
+          <SectionBadge solid>{item.badge}</SectionBadge>
 
           <h2 className="mt-5 font-display text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
             {item.title}{" "}

@@ -1,13 +1,12 @@
 import { FunctionCarousel } from "@/components/Functions/FunctionCarousel";
 import { FUNCTION_ITEMS } from "@/components/Functions/function-items";
+import { SectionBadge } from "@/components/UI";
 
 export function Function({ showEdgeFade = true }: { showEdgeFade?: boolean }) {
   return (
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-        <span className="inline-flex rounded-full bg-turquoise/15 px-4 py-1.5 text-sm font-regular text-black">
-          Funciones
-        </span>
+        <SectionBadge>Funciones</SectionBadge>
 
         <h2 className="mt-6 font-display text-5xl font-bold leading-tight tracking-tight text-black sm:text-6xl lg:text-7xl">
           <span className="block">Gestión integral</span>
