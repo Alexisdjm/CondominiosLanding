@@ -79,9 +79,23 @@ export function FAQItem({ item, isOpen, onToggle }: FAQItemProps) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="px-5 pb-5 text-sm leading-relaxed text-white/85 sm:px-6 sm:pb-6 sm:text-base">
-            {item.answer}
-          </p>
+          <div className="space-y-3 px-5 pb-5 text-sm leading-relaxed text-white/85 sm:px-6 sm:pb-6 sm:text-base">
+            {item.answer.split("\n\n").map((paragraph) => (
+              <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+            ))}
+            {item.steps?.length ? (
+              <ul className="space-y-2.5">
+                {item.steps.map((step) => (
+                  <li key={step.title}>
+                    <span className="font-semibold text-white">
+                      {step.title}:
+                    </span>{" "}
+                    {step.description}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>

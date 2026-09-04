@@ -14,6 +14,10 @@ export type FAQItem = {
   categoryId: FAQCategoryId;
   question: string;
   answer: string;
+  steps?: {
+    title: string;
+    description: string;
+  }[];
 };
 
 export const FAQ_CATEGORIES: FAQCategory[] = [
@@ -68,11 +72,34 @@ export const FAQ_ITEMS: FAQItem[] = [
       "Por supuesto. Puedes cancelar durante el periodo de prueba sin costo y exportar tus datos si lo necesitas.",
   },
   {
-    id: "admin-reportes",
+    id: "admin-validacion-pagos",
     categoryId: "administracion",
-    question: "¿Puedo exportar reportes financieros?",
+    question:
+      "¿Cómo es el proceso de validación e ingreso de los pagos reportados por los propietarios?",
     answer:
-      "Sí. Puedes generar y exportar reportes en PDF o Excel para reuniones, auditorías o respaldos.",
+      "El proceso se realiza de forma semi-automatizada para garantizar un control total:",
+    steps: [
+      {
+        title: "Notificación",
+        description:
+          "El propietario completa y envía el formulario de pago con los datos de la transferencia o depósito.",
+      },
+      {
+        title: "Revisión en panel",
+        description:
+          "La junta o administración recibe la notificación en el panel de control con todos los detalles adjuntos.",
+      },
+      {
+        title: "Verificación bancaria",
+        description:
+          "Se confirma manualmente la recepción del dinero en la cuenta bancaria del condominio.",
+      },
+      {
+        title: "Aprobación",
+        description:
+          "Una vez verificado el fondo, se valida el pago en la plataforma con un solo clic, actualizando de inmediato el saldo e historial del propietario.",
+      },
+    ],
   },
   {
     id: "admin-deudas",
@@ -82,11 +109,34 @@ export const FAQ_ITEMS: FAQItem[] = [
       "Desde el panel de administración puedes ver el estado de cada unidad, registrar convenios y hacer seguimiento de pagos pendientes.",
   },
   {
+    id: "admin-cuotas-especiales",
+    categoryId: "administracion",
+    question:
+      "¿Cómo funcionan las cuotas especiales y a quiénes se les pueden aplicar?",
+    answer:
+      "Las cuotas especiales son cobros ocasionales destinados a proyectos u obras específicas del condominio. Se configuran directamente desde la sección de Ajustes, donde puedes definir el monto y concepto.\n\nAl crearlas, tienes la flexibilidad de seleccionar si se aplicarán a todo el condominio o únicamente a una o varias viviendas en específico. Una vez asignadas, el sistema genera automáticamente los avisos de cobro correspondientes para las casas seleccionadas.",
+  },
+  {
+    id: "admin-convenios",
+    categoryId: "administracion",
+    question:
+      "¿Cómo se gestionan los convenios de pago para propietarios con deuda y qué pasa si no se cumplen?",
+    answer:
+      "Los convenios de pago están diseñados exclusivamente para viviendas que presentan morosidad. Se configuran ingresando directamente al perfil individual de la vivienda correspondiente, donde se establece el acuerdo y se generan los recibos programados.\n\nCada cuota del convenio genera un enlace de pago único que facilita el abono por parte del propietario. Si el propietario no cumple con el acuerdo, la administración tiene la opción de deshacer el convenio, restableciendo el saldo deudor original según el estado previo de la cuenta.",
+  },
+  {
+    id: "admin-reportes",
+    categoryId: "administracion",
+    question: "¿Es posible exportar reportes financieros desde la plataforma?",
+    answer:
+      "Sí. Puedes generar y exportar reportes en PDF o Excel para reuniones, auditorías o respaldos.",
+  },
+  {
     id: "propietarios-pagos",
     categoryId: "propietarios",
     question: "¿Cómo notifico un pago desde la plataforma?",
     answer:
-      "Los propietarios pueden usar el formulario web para reportar transferencias o pagos y la administración los valida desde su panel.",
+      "Para notificar un pago, debes completar el formulario correspondiente, al cual puedes acceder mediante el enlace directo del recibo o ingresando con tu cuenta al portal personal de propietario. En el formulario indicas los datos de la transacción de tu Pago Móvil, Transferencia o Zelle y, de forma opcional, puedes adjuntar el capture de la pantalla o comprobante. Una vez enviado, la administración confirmará la acreditación en el banco para validar la transacción.",
   },
   {
     id: "propietarios-historial",
@@ -100,7 +150,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     categoryId: "precios",
     question: "¿Cómo se calcula el costo del plan básico?",
     answer:
-      "El plan básico se calcula por vivienda. Consulta la sección de precios para ver el detalle actualizado.",
+      "El plan se calcula por vivienda, pero cuenta con un costo mínimo base de $15 USD al mes. Esto significa que si el cálculo total de tu condominio es inferior a $15 USD, la mensualidad final a pagar será de $15 USD. Consulta la sección de precios para ver la tarifa por vivienda actualizada.",
   },
   {
     id: "precios-actualizaciones",
